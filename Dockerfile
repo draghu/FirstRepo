@@ -1,6 +1,10 @@
-FROM nginx
+FROM nanoserver/iis
+COPY . /inetpub/wwwroot/
 
-#COPY wrapper.sh /
-COPY . /usr/share/nginx/html
 
-#CMD ["./wrapper.sh"]
+
+
+
+#STATIC WEB PAGE TESTING USING NGINX SERVER.
+#FROM nginx
+#COPY . /usr/share/nginx/html
