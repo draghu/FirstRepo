@@ -1,4 +1,4 @@
-FROM nanoserver/iis
+FROM iis
 COPY . /inetpub/wwwroot/
 
 
