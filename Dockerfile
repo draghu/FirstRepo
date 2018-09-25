@@ -1,11 +1,6 @@
-FROM microsoft/iis
+microsoft/dotnet-framework:4.7.2-sdk
 
-RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
-
-WORKDIR /inetpub/wwwroot
-
-COPY content/ .
-
+COPY . /inetpub/wwwroot
 
 
 
