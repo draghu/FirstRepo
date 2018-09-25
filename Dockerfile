@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:4.x-windowsservercore
+FROM microsoft/aspnet
 
 COPY . /inetpub/wwwroot/
 
