@@ -1,6 +1,12 @@
-FROM microsoft/dotnet-framework:4.7.2-sdk
+# APACHE SERVER
+FROM httpd:2.4
+COPY . /usr/local/apache2/htdocs/
 
-COPY . /inetpub/wwwroot
+
+
+# NOT WORKING IIS SERVER
+#FROM microsoft/dotnet-framework:4.7.2-sdk
+#COPY . /inetpub/wwwroot
 
 
 
