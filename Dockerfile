@@ -5,7 +5,7 @@
 
 
 # NOT WORKING IIS SERVER
-FROM microsoft/iis
+FROM microsoft/dotnet:2.1-sdk 
 COPY . /inetpub/wwwroot
 
 
