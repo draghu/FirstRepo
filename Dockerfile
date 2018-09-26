@@ -6,6 +6,7 @@
 
 # NOT WORKING IIS SERVER
 FROM microsoft/dotnet:2.1-sdk 
+EXPOSE 44364
 COPY . /inetpub/wwwroot
 
 
