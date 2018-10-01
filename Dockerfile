@@ -1,13 +1,14 @@
 # APACHE SERVER - WORKING
-#FROM httpd:2.4
-#COPY . /usr/local/apache2/htdocs/
+FROM httpd:2.4
+COPY . /usr/local/apache2/htdocs/
 
 
 
 # NOT WORKING IIS SERVER
-FROM microsoft/dotnet:2.1-sdk 
-EXPOSE 44364
-COPY . /inetpub/wwwroot
+
+#FROM microsoft/dotnet:2.1-sdk 
+#EXPOSE 44364
+#COPY . /inetpub/wwwroot
 
 
 
