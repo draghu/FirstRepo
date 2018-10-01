@@ -7,8 +7,10 @@ COPY . /usr/local/apache2/htdocs/
 # NOT WORKING IIS SERVER
 
 #FROM microsoft/dotnet:2.1-sdk 
-#EXPOSE 44364
-#COPY . /inetpub/wwwroot
+FROM microsoft/iis
+EXPOSE 44364
+WORKDIR /inetpub/wwwroot
+COPY . .
 
 
 
