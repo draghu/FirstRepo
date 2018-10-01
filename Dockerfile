@@ -6,8 +6,8 @@
 
 # NOT WORKING IIS SERVER
 
-#FROM microsoft/dotnet:2.1-sdk 
-FROM microsoft/iis:7.5.7600.16385
+FROM microsoft/dotnet:2.1-sdk 
+#FROM microsoft/iis:7.5.7600.16385
 EXPOSE 44364
 #WORKDIR /inetpub/wwwroot
 COPY . /inetpub/wwwroot
